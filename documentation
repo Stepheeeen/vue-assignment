@@ -1,0 +1,3 @@
+v-if in the code is used to verify is if the number the user guessed is equal to the number generated
+v-show is ued to show the alert of the user number guessed and if the number is correct it shows the correct alert and if it isn't, it shows a wrong alert and then shows the correct answer. 
+v-model was used to bind the input value to the 'const randomNum'
