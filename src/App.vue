@@ -41,8 +41,6 @@ export default {
           name="input"
           id="random-nuber"
           v-model="inputedValue"
-
-          @keyup.enter="onClick"
         />
         <button @click="onClick">Check</button>
 
@@ -56,14 +54,14 @@ export default {
 </template>
 
 <style>
-body::-webkit-scrollbar{
-  display: none;
-}
 main {
- display: grid;
- place-items: center;
- width: 100%;
- height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 #container {
   padding: 20px;
@@ -74,19 +72,10 @@ main {
 .random-gen input {
   width: 100%;
   height: 30px;
-  border: 2px solid #000000;
-  margin: 10px 0;
+  border: 1px solid #f4f4f4;
+  margin-top: 20px;
   background: #fff;
   color: #222;
   padding-left: 10px;
-  margin-left: -5px;
-}
-.random-gen button{
-  margin-top: 10px;
-  border: none;
-  padding: 10px 30px;
-  background: #182ef3;
-  color: #fff;
-  border-radius: 5px;
 }
 </style>
